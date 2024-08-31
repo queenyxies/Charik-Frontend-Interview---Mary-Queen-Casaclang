@@ -8,7 +8,7 @@ const IconCard = ({ image, title, text, backgroundColor = 'bg-base-100' }) => {
         <img src={image} alt={title} />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{title}</h2>
+        <h2 className="card-title  text-blue-950">{title}</h2>
         <p>{text}</p>
       </div>
     </div>

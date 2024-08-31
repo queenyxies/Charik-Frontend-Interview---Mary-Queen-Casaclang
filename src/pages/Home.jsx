@@ -35,8 +35,9 @@ const home = () => {
             <img
               src={peacockImage}
               alt="peacock in a business suit with approved thumbs up"
-              className="max-w-full lg:max-w-md mt-4 lg:mt-0"
+              className="w-full max-w-[150px] sm:max-w-[150px] md:max-w-[150px] lg:max-w-[200px] xl:max-w-md mt-4 lg:mt-0"
             />
+
             <div className="text-center lg:text-left mt-6 lg:mt-0">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-950">
                 Get the
@@ -55,7 +56,7 @@ const home = () => {
                 Add contacts and companies from anywhere: LinkedIn, the web, ...
                 and even HubSpot itself.
               </p>
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-950 mt-4">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent mt-4">
                 Save Time, Sell More.
               </h1>
               <button
@@ -80,13 +81,6 @@ const home = () => {
         </p>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-screen-xl">
-
-          <IconCard
-            image={iconConnect}
-            title="Made for HubSpot"
-            text="The finest integration experience you'll encounter with HubSpot"
-            backgroundColor="bg-base-100"
-          />
           <IconCard
             image={iconConnect}
             title="Made for HubSpot"
