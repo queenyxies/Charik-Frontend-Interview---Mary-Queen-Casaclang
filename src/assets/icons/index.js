@@ -1,0 +1,15 @@
+export { default as iconCompany } from './icon-company.png';
+export { default as iconDatabase } from './icon-database.png';
+export { default as iconInternet } from './icon-internet.png';
+export { default as iconPhone } from './icon-phone.png';
+export { default as iconCheck } from './icon-check.png';
+export { default as iconUser } from './icon-user.png';
+export { default as iconConnect } from './icon-connect.png';
+export { default as iconSearch } from './icon-search.png';
+export { default as iconMail } from './icon-mail.png';
+export { default as iconAdd } from './icon-add.png';
+export { default as iconSheet } from './icon-sheet.png';
+export { default as iconWeb } from './icon-web.png';
+export { default as iconFilter } from './icon-filter.png';
+export { default as iconData } from './icon-data.png';
+export { default as iconBadge } from './icon-badge.png';
