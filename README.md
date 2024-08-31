@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Charik-Frontend-Interview---Mary-Queen-Casaclang
- Charik frontend developer technical test
-=======
-# Charik React Website
+#  Charik frontend developer technical test
 
 To get started with this project, follow the steps below:
 
@@ -18,7 +14,3 @@ To get started with this project, follow the steps below:
 
 3. **Run the development server:**
     npm run dev
-
-
-
->>>>>>> master
