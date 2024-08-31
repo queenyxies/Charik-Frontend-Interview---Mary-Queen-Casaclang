@@ -3,8 +3,12 @@ import AuroraBackground from "../components/ui/aurora-background";
 import WavyBackground from "../components/ui/wavy-background";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation/Navigation";
-import peacockImage from "../assets/images/peacock_main.png";
-import ImgPeacockCall from "../assets/images/peacock-call.png";
+import {
+  imgPeacockBoss,
+  imgPeacockCall,
+  imgPeacockChat,
+  imgPeacockMain
+} from "../assets/images";
 import {
   iconCompany,
   iconDatabase,
@@ -24,6 +28,7 @@ import {
 } from "../assets/icons";
 import IconCard from "../components/Card/IconCard";
 import ArticleCard from "../components/Card/ArticleCard";
+import GlassCard from "../components/Card/GlassCard";
 
 const home = () => {
   return (
@@ -33,7 +38,7 @@ const home = () => {
         <div className="hero bg-base-200 min-h-screen">
           <div className="hero-content flex flex-col-reverse lg:flex-row-reverse items-center">
             <img
-              src={peacockImage}
+              src={imgPeacockMain}
               alt="peacock in a business suit with approved thumbs up"
               className="w-full max-w-[150px] sm:max-w-[150px] md:max-w-[150px] lg:max-w-[200px] xl:max-w-md mt-4 lg:mt-0"
             />
@@ -70,8 +75,7 @@ const home = () => {
         </div>
       </AuroraBackground>
       <div
-        className="flex flex-col items-center justify-center text-center py-10"
-        style={{ backgroundColor: "#f2f2f2" }}
+        className="flex flex-col items-center justify-center text-center py-10 bg-gradient-to-r from-[#a6e1ee] to-[#abc3d9]"
       >
         <h1 className="text-5xl font-bold mb-6">Discover our key features</h1>
         <p className="max-w-2xl mb-10 text-lg">
@@ -180,69 +184,26 @@ const home = () => {
               <div className="p-6 xl:col-span-3">
                 <div className="grid gap-4 md:grid-cols-2">
                   <div className="grid content-center gap-4">
-                    <div className="p-6 rounded shadow-md glass">
-                      <p>
-                        "Charik is an essential tool for any company looking to
-                        leverage HubSpot to its full potential"
-                      </p>
-                      <div className="flex items-center mt-4 space-x-4">
-                        <div className="avatar">
-                          <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
-                            <img src="https://www.charik.fr/hs-fs/hubfs/antoine-charpin-hubspot-partner.jpeg?width=400&name=antoine-charpin-hubspot-partner.jpeg" />
-                          </div>
-                        </div>
-                        <div>
-                          <p className="text-lg font-semibold">
-                            Antonie Charpin
-                          </p>
-                          <p className="text-sm dark:text-gray-600">
-                            CEO, Digita Web
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                    <GlassCard
+                      text="Charik is an essential tool for any company looking to leverage HubSpot to its full potential"
+                      imageSrc="https://www.charik.fr/hs-fs/hubfs/antoine-charpin-hubspot-partner.jpeg?width=400&name=antoine-charpin-hubspot-partner.jpeg"
+                      name="Antonie Charpin"
+                      title="CEO, Digita Web"
+                    />
                   </div>
                   <div className="grid content-center gap-4">
-                    <div className="p-6 rounded shadow-md glass">
-                      <p>
-                        "Charik enabled us to quickly enter a new market by
-                        integrating new contacts very rapidly."
-                      </p>
-                      <div className="flex items-center mt-4 space-x-4">
-                        <div className="avatar">
-                          <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
-                            <img src="https://www.charik.fr/hs-fs/hubfs/toufik-numoo-partner-hubspot.jpeg?width=408&name=toufik-numoo-partner-hubspot.jpeg" />
-                          </div>
-                        </div>
-                        <div>
-                          <p className="text-lg font-semibold">Toufik Tellai</p>
-                          <p className="text-sm dark:text-gray-600">
-                            CEO, Numoo Agency
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="p-6 rounded shadow-md glass">
-                      <p className="text-lg">
-                        "The financial features integrated directly into HubSpot
-                        allow for a quick analysis."
-                      </p>
-                      <div className="flex items-center mt-4 space-x-4">
-                        <div className="avatar">
-                          <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
-                            <img src="https://www.charik.fr/hs-fs/hubfs/soukanda-vc-invest.jpeg?width=400&name=soukanda-vc-invest.jpeg" />
-                          </div>
-                        </div>
-                        <div>
-                          <p className="text-lg font-semibold">
-                            Soukanda Bentaleb
-                          </p>
-                          <p className="text-sm dark:text-gray-600">
-                            Directrice d'investissement | Private Equity
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                    <GlassCard
+                      text="Charik enabled us to quickly enter a new market by integrating new contacts very rapidly."
+                      imageSrc="https://www.charik.fr/hs-fs/hubfs/toufik-numoo-partner-hubspot.jpeg?width=408&name=toufik-numoo-partner-hubspot.jpeg"
+                      name="Toufik Tellai"
+                      title="CEO, Numoo Agency"
+                    />
+                    <GlassCard
+                      text="The financial features integrated directly into HubSpot allow for a quick analysis."
+                      imageSrc="https://www.charik.fr/hs-fs/hubfs/soukanda-vc-invest.jpeg?width=400&name=soukanda-vc-invest.jpeg"
+                      name="Soukanda Bentaleb"
+                      title="Directrice d'investissement | Private Equity"
+                    />
                   </div>
                 </div>
               </div>
@@ -254,7 +215,7 @@ const home = () => {
                     <div class="mt-3 flex gap-4 items-center">
                       <img
                         class="h-12 w-12 rounded-full"
-                        src="https://pbs.twimg.com/profile_images/1599029039297077249/p0znhFdE_400x400.jpg"
+                        src="https://media.licdn.com/dms/image/v2/D4E03AQGNyKzSSZsk-w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715874243174?e=1730332800&v=beta&t=lKMAzJM7f9T5CWC9XF4zwuhagUWSsnqhcFGPRo-Nnvg"
                         alt=""
                       />
                       <div>
@@ -302,21 +263,21 @@ const home = () => {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <ArticleCard
-            imageSrc={ImgPeacockCall}
+            imageSrc={imgPeacockCall}
             title="Comprendre le Social Selling Index (SSI) de LinkedIn"
             date="28 August 2024"
             badgeText="Prospection"
             readTime="3 min read"
           />
           <ArticleCard
-            imageSrc={ImgPeacockCall}
+            imageSrc={imgPeacockBoss}
             title="Optimisation de la Prospection de Leads"
             date="25 August 2024"
             badgeText="Prospection"
             readTime="5 min read"
           />
           <ArticleCard
-            imageSrc={ImgPeacockCall}
+            imageSrc={imgPeacockChat}
             title="Trust Journey: The new frontier in sales process"
             date="5 June 2024"
             badgeText="Prospection"
